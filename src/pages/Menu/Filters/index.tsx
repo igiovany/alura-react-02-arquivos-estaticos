@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './Filters.module.scss'
 import filters from './filters.json'
 import classNames from 'classnames'

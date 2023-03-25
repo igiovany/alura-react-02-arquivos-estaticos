@@ -3,6 +3,7 @@ import styles from './Menu.module.scss'
 import { ReactComponent as Logo } from 'assets/logo.svg'
 import { Search } from './Search'
 import { Filters } from './Filters'
+import { Sorter } from './Sorter'
 
 export function Menu() {
 
@@ -25,6 +26,7 @@ const [filter, setFilter] = useState<number | null>(null)
         <Search search={search} setSearch={setSearch}/>
         <div className={styles.menu__filters}>
           <Filters filter={filter} setFilter={setFilter} />
+          <Sorter />
         </div>
       </section>
     </main>
