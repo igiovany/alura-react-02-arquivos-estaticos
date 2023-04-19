@@ -8,7 +8,10 @@ export function Items() {
     <div className={styles.items}>
       {menu.map(item => (
         <div>
-          <Item key={item.id}/>
+          <Item
+            key={item.id}
+            {...item}
+          />
         </div>
       ))}
     </div>
